@@ -25,12 +25,12 @@ class UPIPayment extends Payment {
 
     public UPIPayment(String transactionId, String upiId) {
         super(transactionId);
-        this.upiId = upiId;
+        this.upiId = upiId; 
     }
 
     @Override
     void pay(double amount) {
-        System.out.println("Processing UPI payment via ID: " + upiId);
+        System.out.println("Processing UPI Payment via ID: " + upiId);
         generateReceipt(amount);
     }
 }
@@ -47,7 +47,25 @@ class CreditCardPayment extends Payment {
 
     @Override
     void pay(double amount) {
-        System.out.println("Processing Credit Card payment using card: " + cardNumber);
+        System.out.println("Processing Credit Card Payment using Card Number: " + cardNumber);
+        generateReceipt(amount);
+    }
+}
+
+//Net-Banking Payment
+class NetBankingPayment extends Payment
+{
+    private String userId;
+
+    public NetBankingPayment(String transactionId, String userId)
+    {
+        super(transactionId);
+        this.userId = userId;
+    }
+    @Override
+    void pay(double amount)
+    {
+        System.out.println("Processing Net Banking Payment using Using UserID: " + userId);
         generateReceipt(amount);
     }
 }
@@ -59,8 +77,10 @@ public class PaymentApp {
 
         Payment upi = new UPIPayment("TXN1001", "yash@upi");
         Payment card = new CreditCardPayment("TXN1002", "1234-5678-9012-3456");
+        Payment net = new NetBankingPayment("TXN1002", "Yash18");
 
         upi.pay(1500);
         card.pay(5000);
+        net.pay(80000);
     }
 }
