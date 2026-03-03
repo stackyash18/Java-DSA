@@ -42,5 +42,9 @@ public class ConstructorsInInheritance {
   GrandChild gc = new GrandChild();
   GrandChild gc1 = new GrandChild(30);
   
+  gc.getClass();
+  gc1.getClass();
+  
+  
   }
 }
