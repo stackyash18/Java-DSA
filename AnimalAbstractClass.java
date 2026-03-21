@@ -39,6 +39,11 @@ public class AnimalAbstractClass {
   {
    HumanBasic human = new HumanBasic();
    human.sleep();
-   human.sleep();
+
+   Monkey hum = new HumanBasic();
+   hum.bite();
+
+   Animal yash = new HumanBasic();
+   yash.eat();
   }
 }
