@@ -8,10 +8,10 @@ class Working
 
   public void meth()
   {
-   System.out.println(x);
-   System.out.println(y);
-   System.out.println(z);
-   System.out.println(c);
+    System.out.println(x);
+    System.out.println(y);
+    System.out.println(z);
+    System.out.println(c);
   }
 }
 public class AccessModifier {
@@ -25,3 +25,11 @@ public class AccessModifier {
   }
   
 }
+
+/*Summary   ~~Access Modifier
+Modifier    Class   Package     Subclass    World  
+1.Public      Y        Y           Y          Y
+2.Protected   Y        Y           Y          Y
+3.Default     Y        Y           N          N
+4.Private     Y        N           N          N
+ */
