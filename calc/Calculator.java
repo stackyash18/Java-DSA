@@ -50,7 +50,8 @@ class HybCalc
   {
   float interest = (rate/100)*principalAmount;
   float totalAmount = principalAmount + interest*noOfYears;
-  }
+  System.out.println("The Total Amount is:  " + totalAmount);  
+}
 }
 public class Calculator {
   public static void main(String args[])
