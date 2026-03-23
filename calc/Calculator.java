@@ -2,6 +2,8 @@ package calc;
 
 class SimpleCalculator
 {
+   protected int proInt = 4;
+    int defInt = 5;
   public void addNum(int a, int b)
   {
   System.out.println("Your Result is: " + (a+b));
@@ -56,6 +58,7 @@ class HybCalc
 public class Calculator {
   public static void main(String args[])
   {
+   
     System.out.println("This is Calculator");
   }
 }
