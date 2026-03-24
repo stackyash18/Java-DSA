@@ -7,7 +7,7 @@ class Parent {
 
 class Child extends Parent {
 
-   @Override
+    @Override
     public void meth2() {
         System.out.println("I am method 2 of child class");
     }
