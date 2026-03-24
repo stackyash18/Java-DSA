@@ -1,4 +1,5 @@
 package com.yash.shape;
+
 class Circle
 {
   private double radius;
@@ -131,7 +132,14 @@ class Cylinder extends Circle
     double baseArea = Math.PI * getRadius() * getRadius();
     System.out.println("The Base Area of Cylinder is: " + baseArea);
   }
-
+}
+class Sphere extends Cylinder
+{
+  public void calculateSurfaceArea()
+  {
+    double surfaceArea = 4 * Math.PI * getRadius() * getRadius();
+    System.out.println("The Surface Area of Sphere: " + surfaceArea);
+  }
 }
 /* 
   *** THIS CODE SHOULD WRITE IN NOTEPAD ***
