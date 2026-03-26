@@ -1,157 +1,189 @@
 package com.yash.shape;
 
-class Circle
+abstract class Shape
 {
-  private double radius;
-
-  public double getRadius()
-  {
-    return radius;
-  }
-  public void setRadius(double radius)
-  {
-    this.radius = radius;
-  }
-
-  public void calculateCircumference()
-  {
-    double circumference = 2 * Math.PI * radius;
-    System.out.println("The Circumference of the Circle: " + circumference);
-  }
-  public void  calculateArea()
-  {
-   double area = 2 * Math.PI * radius * radius;
-   System.out.println("The Area of Circle is: " + area);
-  }
-}
-class Rectangle
-{
-  private int length;
-  private int breadth;
-
-  public int getLength(int length)
-  {
-   return length;
-  }
-  public int getBreadth(int breadth)
-  {
-    return breadth;
-  }
-
-  public void setLength(int length)
-  {
-    this.length = length;
-  }
-  public void setBreadth(int breadth)
-  {
-    this.breadth = breadth;
-  }
-
-  public void calculateArea()
-  {
-    int area = length*breadth;
-    System.out.println("The Area of the Rectangle: " + area);
-  }
-  public void calculatePerimeter()
-  {
-     int perimeter = 2*(length+breadth);
-     System.out.println("The Perimeter of the Rectanlge: " + perimeter);
-  }
-  public void calculateDiagonal()
-  {
-    double diagonal = Math.sqrt(breadth*breadth + length*length);
-    System.out.println("The Diagonal of the Rectangle: " + diagonal);
-  }
+  abstract double calculateArea();
 
 }
+// Base class
+class Circle extends Shape {
+    private double radius;
 
-class Square
-{
-  private int side;
+    public double getRadius() {
+        return radius;
+    }
 
-  public int getSide(int side)
-  {
-    return side;
-  }
-  public void setSide(int side)
-  {
-    this.side = side;
-  }
+    public void setRadius(double radius) {
+      if(radius>=0)
+      {  
+        this.radius = radius;
+      }
+      else
+      {
+        System.out.println(" Radius cannot be Negative. ");
+      }
+    }
 
-  public void calculateArea()
-  {
-   int area = side*side;
-   System.out.println("Th Area of  the Square :" + area);
-  }
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
 
-  public void calculatePerimeter()
-  {
-     int perimeter = 4*side;
-     System.out.println("The Perimeter of the Square :" + perimeter);
-  }
-
-  public void calculateLengthOfDiagonal()
-  {
-    double diagonal = side * Math.sqrt(2);
-    System.out.println("The Diagonal Length of the Square is: " + diagonal);
-  }
+    public double calculateCircumference() {
+        return 2 * Math.PI * radius;
+    }
 }
-class Cylinder extends Circle
-{
-  private double height;
 
-  public double getHeight(double height)
-  {
-    return height;
-  }
-  public void setHeight(double height)
-  {
-    this.height = height;
-  }
+// Rectangle class
+class Rectangle extends Shape {
+    private int length;
+    private int breadth;
 
-  public void calculateVolume()
-  {
-    double volume = Math.PI * getRadius() * getRadius() * height;
-    System.out.println("The Volume of the Cylinder: " + volume);
-  }
+    public int getLength() {
+        return length;
+    }
 
-  public void calculateCurvedSurfaceArea()
-  {
-    double CSA = 2 * Math.PI * getRadius() * height;
-    System.out.println("The C.S.A of Cylinder: " + CSA); 
-  }
+    public int getBreadth() {
+        return breadth;
+    }
 
-  public void calculateTotalSurfaceArea()
-  {
-    double TSA = (2 * Math.PI * getRadius() * ( getRadius() *+ height)); 
-    System.out.println("The T.S.A of Cylinder: " + TSA);
-  }
+    public void setLength(int length) {
+      if(length>=0)
+      {
+        this.length = length;
+      }
+      else
+      {
+        System.out.println("Length cannot be Negative.");
+      }
+    }
 
-  public void calculateBaseArea()
-  {
-    double baseArea = Math.PI * getRadius() * getRadius();
-    System.out.println("The Base Area of Cylinder is: " + baseArea);
-  }
+    public void setBreadth(int breadth) {
+      if(breadth>=0)
+      {
+        this.breadth = breadth;
+      }
+      else
+      {
+        System.out.println("Breadth caannot be Negative.");
+      }
+    }
+
+    public double calculateArea() {
+        return length * breadth;
+    }
+
+    public int calculatePerimeter() {
+        return 2 * (length + breadth);
+    }
+
+    public double calculateDiagonal() {
+        return Math.sqrt(length * length + breadth * breadth);
+    }
 }
-class Sphere extends Cylinder
-{
-  public void calculateSurfaceArea()
-  {
-    double surfaceArea = 4 * Math.PI * getRadius() * getRadius();
-    System.out.println("The Surface Area of Sphere: " + surfaceArea);
-  }
+
+// Square class
+class Square extends Rectangle {
+    private int side;
+
+    public int getSide() {
+        return side;
+    }
+
+    public void setSide(int side) {
+      if(side>=0)
+      {
+        this.side = side;
+      }
+      else
+      {
+        System.out.println("Side cannot be Negative.");
+      }
+    }
+
+    public double calculateArea() {
+        return side * side;
+    }
+
+    public int calculatePerimeter() {
+        return 4 * side;
+    }
+
+    public double calculateDiagonal() {
+        return side * Math.sqrt(2);
+    }
 }
-/* 
-  *** THIS CODE SHOULD WRITE IN NOTEPAD ***
-You have to create a package named yash.in.shape
-This package should have individual classes for Rectangle, Square,Circle, Cylinder, Sphere
-These classes should use inheritance  to properly manage the code!
-Include method like volume,surfaceArea and getters/setters for dimensions 
-*/
+
+// Cylinder inherits Circle
+class Cylinder extends Circle {
+    private double height;
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+      if(height>=0)
+      {
+        this.height = height;
+      }
+      else
+      {
+      System.out.println("Height cannot be Negative.");
+      }
+    }
+
+    public double calculateVolume() {
+        return Math.PI * getRadius() * getRadius() * height;
+    }
+
+    public double calculateCurvedSurfaceArea() {
+        return 2 * Math.PI * getRadius() * height;
+    }
+
+    public double calculateTotalSurfaceArea() {
+        return 2 * Math.PI * getRadius() * (getRadius() + height);
+    }
+}
+
+
+class Sphere extends Circle {
+
+    public double calculateSurfaceArea() {
+        return 4 * Math.PI * getRadius() * getRadius();
+    }
+
+    public double calculateVolume() {
+        return (4.0 / 3.0) * Math.PI * Math.pow(getRadius(), 3);
+    }
+}
+
+
 public class CustomPackage {
+    public static void main(String[] args) {
 
-  public static void main(String args[])
-  {
-   
-  }
+        Circle c = new Circle();
+        c.setRadius(15);
+        System.out.println("Circle Circumference: " + c.calculateCircumference());
+
+        Shape s = c;
+        System.out.println("Circle Area: " + s.calculateArea());
+
+        Rectangle r = new Rectangle();
+        r.setLength(10);
+        r.setBreadth(5);
+        System.out.println("Rectangle Area: " + r.calculateArea());
+
+        Square sq = new Square();
+        sq.setSide(4);
+        System.out.println("Square Area: " + sq.calculateArea());
+
+        Cylinder cy = new Cylinder();
+        cy.setRadius(3);
+        cy.setHeight(7);
+        System.out.println("Cylinder Volume: " + cy.calculateVolume());
+
+        Sphere sp = new Sphere();
+        sp.setRadius(3);
+        System.out.println("Sphere Volume: " + sp.calculateVolume());
+    }
 }
