@@ -1,4 +1,4 @@
-package Java.com.yash.shape;
+package com.yash.shape;
 
 abstract class Shape
 {
