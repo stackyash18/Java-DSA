@@ -12,6 +12,26 @@
  5. Waiting State : A thread can enter the waiting state when it is waiting for another thread to perform a specific action. For example, if a thread calls the wait() method, it will enter the waiting state until another thread calls notify() or notifyAll() to wake it up.
 
  6. Terminated State : A thread enters the terminated state when its run() method completes or when it is interrupted. Once a thread is in this state, it cannot be restarted.
+
+--------------
+ 1.New       |
+--------------
+
+--------------
+ 2.Runnable  | ---------------
+--------------                |
+                              |             --------------------------  
+                              -> ----------->4.Non-Runnable(Blocked)  |
+                              |             --------------------------  
+--------------                |
+ 3.Running   | ---------------
+--------------
+
+--------------
+ 4.Terminated|
+--------------
+
+
 */
 public class ThreadLifeCycle {
   public void main(String args[])
