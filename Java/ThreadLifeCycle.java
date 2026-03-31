@@ -13,6 +13,8 @@
 
  6. Terminated State : A thread enters the terminated state when its run() method completes or when it is interrupted. Once a thread is in this state, it cannot be restarted.
 
+ ------> Diagramatic Representation <----------
+
 --------------
  1.New       |
 --------------
