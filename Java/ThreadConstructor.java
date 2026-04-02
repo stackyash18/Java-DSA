@@ -13,6 +13,7 @@ class MyRunnable implements Runnable
   public void run()
   {
     int j = 96;
+    System.out.println(j);
     for(int i=1; i<=10; i++)
     {
       System.out.println("Thread Running: " + name);
@@ -25,6 +26,5 @@ public class ThreadConstructor {
   MyRunnable obj = new MyRunnable("yash");
    Thread t1 =  new Thread(obj);
    t1.start();
-   System.out.println("The id of the Thread is: " + t1.getId());
   }
 }
