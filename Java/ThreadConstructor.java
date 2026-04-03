@@ -25,6 +25,10 @@ public class ThreadConstructor {
   {
   MyRunnable obj = new MyRunnable("yash");
    Thread t1 =  new Thread(obj);
+   Thread t2 = new Thread(obj);
+   t2.start();
    t1.start();
+   System.out.println(t1.threadId());
+   System.out.println("The Thread Id of t1 is: " + t2.threadId());
   }
 }
