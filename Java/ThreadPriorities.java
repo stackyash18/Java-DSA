@@ -24,6 +24,7 @@ public class ThreadPriorities
 
     t1.start();
     t2.start();
+    Thread.activeCount();
 
     
   }
