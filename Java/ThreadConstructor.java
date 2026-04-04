@@ -29,6 +29,7 @@ public class ThreadConstructor {
    t2.start();
    t1.start();
    System.out.println(t1.threadId());
-   System.out.println("The Thread Id of t1 is: " + t2.threadId());
+   System.out.println("The thread id of t1 is: " + t2.threadId());
+   System.out.println("The thread name of t2 is: " + t2.getName());
   }
 }
