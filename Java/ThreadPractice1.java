@@ -2,18 +2,18 @@ class PracticeA extends Thread
 {
  public void run()
  {
-  while(true)
-  {
-    try
+    while(true)
     {
-      PracticeA.sleep(20);
+      try
+      {
+        PracticeA.sleep(20);
+      }
+      catch (Exception e)
+      {
+        System.out.println(e);
+      }
+      System.out.println("Good Morning.");
     }
-    catch (Exception e)
-    {
-      System.out.println(e);
-    }
-    System.out.println("Good Morning.");
-  }
  }
 }
 
@@ -43,6 +43,7 @@ public class ThreadPractice1 {
   PracticeB p2 = new PracticeB();
   System.out.println(p1.getState());
   System.out.println(p2.getState());
+  System.out.println(Thread.currentThread().getState());
 
   // p1.start();
   // p2.start();
