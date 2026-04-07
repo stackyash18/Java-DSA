@@ -41,8 +41,10 @@ public class ThreadPractice1 {
   {
   PracticeA p1 = new PracticeA();
   PracticeB p2 = new PracticeB();
+  System.out.println(p1.getState());
+  System.out.println(p2.getState());
 
-  p1.start();
-  p2.start();
+  // p1.start();
+  // p2.start();
   }
 }
