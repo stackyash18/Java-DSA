@@ -4,6 +4,14 @@ class PracticeA extends Thread
  {
   while(true)
   {
+    try
+    {
+      PracticeA.sleep(20);
+    }
+    catch (Exception e)
+    {
+      System.out.println(e);
+    }
     System.out.println("Good Morning.");
   }
  }
@@ -28,7 +36,7 @@ class PracticeB extends Thread
  }
 }
 
-public class ThreadPractice {
+public class ThreadPractice1 {
   public static void main(String args[])
   {
   PracticeA p1 = new PracticeA();
