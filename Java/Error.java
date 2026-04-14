@@ -6,6 +6,7 @@ public class Error {
    System.ott.println(); -->>
    */
 
+
    /*
    Logical Error 
    -->>to find the prime number 
@@ -36,7 +37,9 @@ public class Error {
    }
    */
   
-
-
+  /* 
+  Runtime Error
+  int k = 0;
+  System.out.println(1000/k); */
   }
 }
