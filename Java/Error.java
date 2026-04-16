@@ -40,6 +40,8 @@ public class Error {
   /* 
   Runtime Error
   int k = 0;
-  System.out.println(1000/k); */
+  System.out.println(1000/k);
+  */
+ 
   }
 }
