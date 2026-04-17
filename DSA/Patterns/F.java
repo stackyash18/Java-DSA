@@ -1,5 +1,4 @@
 package DSA.Patterns;
-
 /* 
 Pattern 6.
  
