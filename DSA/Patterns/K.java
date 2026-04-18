@@ -1,20 +1,20 @@
 package DSA.Patterns;
 
 /* 
-Pattern 10.
-        * 
-      * * * 
-    * * * * *
-  * * * * * * *
-    * * * * * 
-      * * * 
-        * 
+Pattern 11.
+                           * 
+                         *   * 
+                       *       *
+                     *           *
+                       *       *
+                         *   * 
+                           *  
 */
-public class J {
+public class K {
   public static void main(String args[])
   {
-       //Part 1
-     int n=4;
+    //Part-1
+       int n=4;
   
   for(int i=1; i<=n; i++){
     for(int j=1; j<=n-i; j++)
@@ -27,6 +27,8 @@ public class J {
     }
     System.out.println();
   }
+
+ // part -2
    int m=3;
    for(int i =1; i<=m; i++)
    {
