@@ -27,6 +27,8 @@ public class J {
     }
     System.out.println();
   }
+
+  //Part-2
    int m=3;
    for(int i =1; i<=m; i++)
    {
