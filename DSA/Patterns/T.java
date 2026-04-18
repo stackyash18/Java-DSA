@@ -1,13 +1,13 @@
 package DSA.Patterns;
 
 /* 
-Pattern 20
+Pattern 20.
 
 
            A 
          A B A 
        A B C B A 
-       A B C D C B A
+     A B C D C B A
 
 
        */
