@@ -23,3 +23,14 @@ To develop strong logical thinking and become proficient in Data Structures and 
 
 ## Note
 This is an evolving repository. Some topics and implementations are still being refined and expanded over time.
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/stackyash18/Java-DSA/tree/master/0001-two-sum) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/stackyash18/Java-DSA/tree/master/0001-two-sum) |
+<!---LeetCode Topics End-->
