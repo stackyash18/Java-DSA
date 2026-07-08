@@ -13,11 +13,11 @@ class Child extends Parent {
     }
 }
 
- class MethodOverriding {
+class MethodOverriding {
 
     public static void main(String[] args) {
 
-        Parent obj = new Child();   
-        obj.meth2();               
+        Parent obj = new Child();
+        obj.meth2();
     }
 }
