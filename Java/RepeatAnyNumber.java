@@ -7,8 +7,7 @@ public class RepeatAnyNumber {
     int n = input.nextInt();
 
     int i = 1;
-    while (i <= n) 
-    {
+    while (i <= n) {
       System.out.println(5);
       i++;
     }
