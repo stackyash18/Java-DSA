@@ -8,14 +8,12 @@ public class SumOfEvenNumber {
 
     int n = input.nextInt();
 
-    int sum =0;
+    int sum = 0;
 
-    for(int i = 1; i <= n; i++)
-    {
-     if(i % 2 == 0)
-     {
-      sum += i;
-     }
+    for (int i = 1; i <= n; i++) {
+      if (i % 2 == 0) {
+        sum += i;
+      }
     }
 
     System.out.println("Sum of even numbers from 1 to " + n + " is: " + sum);
