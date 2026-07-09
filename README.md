@@ -132,7 +132,7 @@ I update this repository regularly as I complete new Java topics and projects.
 ## 🛠 Tech Stack
 
 - Java
-- IntelliJ IDEA / VS Code
+- VS Code
 - Git
 - GitHub
 
@@ -152,7 +152,7 @@ This repository is continuously updated as I progress through my Java learning j
 
 ## 🤝 Connect with Me
 
-- LinkedIn: https://linkedin.com/in/your-link
+- LinkedIn: https://www.linkedin.com/in/yashtomar18/
 - GitHub: https://github.com/stackyash18
 
 ---
