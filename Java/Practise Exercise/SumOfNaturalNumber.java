@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SumOfNatureNumber {
+public class SumOfNaturalNumber {
   static int sum(int n) {
     if (n <= 0) {
       return 0;
