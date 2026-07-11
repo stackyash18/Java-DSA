@@ -19,7 +19,6 @@ class ArrayUtility {
     arr[i]=input.nextInt(); 
     i++;
   }
-  input.close();
   return arr;
 }
 
