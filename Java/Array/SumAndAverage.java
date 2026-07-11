@@ -20,8 +20,7 @@ public class SumAndAverage {
     }
     int rows = arr.length;
     int columns = arr[0].length;
-    int size = rows*columns;
-    return sumOf2D(arr) / size;
+    return sumOf2D(arr) / (rows * columns);
   }
 
   public static int sumOf2D(int arr[][]) {
