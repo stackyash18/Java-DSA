@@ -11,6 +11,12 @@ class ArrayUtility {
   System.out.println("Please enter the number of element: ");
   int n = input.nextInt();
 
+  if(n<=0)
+  {
+    System.out.println("Enter a valid number of elements");
+    System.exit(n);
+  }
+
   int[] arr = new int[n];
   int i=0;
   while(i<n)
