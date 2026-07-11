@@ -1,6 +1,4 @@
 package Array;
-
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class DeleteFromArray {
@@ -17,6 +15,8 @@ public class DeleteFromArray {
 
     System.out.print("New Array: ");
     ArrayUtility.displayArray(newArr);
+
+    input.close();
   }
 
   public static int[] toDeleteElement(int arr[], int delNum)
