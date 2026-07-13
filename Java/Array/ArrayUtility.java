@@ -54,8 +54,7 @@ class ArrayUtility {
     System.out.println("Enter the no of columns: ");
     int columns = input.nextInt();
 
-    if(rows!=columns)
-    {
+    if (rows != columns) {
       System.out.println("Kindly print the same no. of rows and columns.");
       return null;
     }

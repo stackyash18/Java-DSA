@@ -1,9 +1,9 @@
 package Array;
+
 import java.util.Scanner;
 
 public class DeleteFromArray {
-  public static void main(String args[])
-  {
+  public static void main(String args[]) {
     Scanner input = new Scanner(System.in);
     System.out.println("Array deletion.");
     int arr[] = ArrayUtility.inputArray();
@@ -19,21 +19,17 @@ public class DeleteFromArray {
     input.close();
   }
 
-  public static int[] toDeleteElement(int arr[], int delNum)
-  {
+  public static int[] toDeleteElement(int arr[], int delNum) {
     int occ = OccurrencesArray.ToFindOccurrence(arr, delNum);
-    if(occ==0)
-    {
+    if (occ == 0) {
       return arr;
     }
     int newSize = arr.length - occ;
-    int [] newArr = new int[newSize];
+    int[] newArr = new int[newSize];
 
-    int i=0, j=0;
-    while(i<arr.length)
-    {
-      if(arr[i]!=delNum)
-      {
+    int i = 0, j = 0;
+    while (i < arr.length) {
+      if (arr[i] != delNum) {
         newArr[j] = arr[i];
         j++;
       }
