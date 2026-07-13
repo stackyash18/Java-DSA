@@ -1,28 +1,21 @@
 package Array;
 
 public class Palindrome {
-  public static void main(String args[])
-  {
+  public static void main(String args[]) {
     System.out.println("Palindrome checker");
     int arr[] = ArrayUtility.inputArray();
     boolean isPalin = isPalndrome(arr);
-    if(isPalin)
-    {
+    if (isPalin) {
       System.out.println("The number is palindrome.");
-    }
-    else
-    {
+    } else {
       System.out.println("The number is not palindrome.");
     }
-    
+
   }
 
-  public static boolean isPalndrome(int arr[])
-  {
-    for(int i=0; i<arr.length; i++)
-    {
-      if(arr[i]!=arr[(arr.length-1)-i])
-      {
+  public static boolean isPalndrome(int arr[]) {
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] != arr[(arr.length - 1) - i]) {
         return false;
       }
     }

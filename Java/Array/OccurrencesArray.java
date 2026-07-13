@@ -21,10 +21,8 @@ public class OccurrencesArray {
 
   public static int ToFindOccurrence(int arr[], int searchnum) {
     int count = 0;
-    for(int i=0; i<arr.length; i++)
-    {
-      if(arr[i]==searchnum)
-      {
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] == searchnum) {
         count++;
       }
     }
