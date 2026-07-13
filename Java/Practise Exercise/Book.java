@@ -1,6 +1,7 @@
   public class Book
   {
     public static int totalBooks;
+    
     String title;
     String author;
     long isbn;
