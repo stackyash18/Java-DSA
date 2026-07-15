@@ -12,13 +12,27 @@ public class SimpleCalculator {
     String opr = input.next();
 
     switch (opr) {
-      case opr:
-        
+      case "+":
+        System.out.println(num1+num2);
+        break;
+
+      case "-":
+        System.out.println(num1-num2);
+        break;
+
+      case "*":
+        System.out.println(num1*num2);
+        break;
+
+      case "/":
+        System.out.println(num2/num1);
         break;
     
       default:
         break;
     }
+
+    input.close();
   }
 
 
