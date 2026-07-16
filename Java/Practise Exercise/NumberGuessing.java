@@ -11,5 +11,6 @@ public class NumberGuessing {
       guess = input.nextInt();
     } while(num != guess);
     System.out.println("You have successfully guessed the number.");
+    input.close();
   }
 }
