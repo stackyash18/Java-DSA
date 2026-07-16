@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Fibonacci {
   static int fibonacci(int n) {
     if (n == 0) {
@@ -10,9 +12,10 @@ public class Fibonacci {
   }
 
   public static void main(String[] args) {
-    int n = 7;
+    Scanner input = new Scanner(System.in);
+    int n = input.nextInt();
     int result = fibonacci(n);
     System.out.println("Fibonacci number at position " + n + " is: " + result);
-
+    input.close();
   }
 }
