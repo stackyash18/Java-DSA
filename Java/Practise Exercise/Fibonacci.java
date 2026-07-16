@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Fibonacci {
   static int fibonacci(int n) {
+    System.out.print("."); //want to see how much time the function called
     if (n == 0) {
       return 0;
     }
@@ -13,9 +14,14 @@ public class Fibonacci {
 
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
+    System.out.print("Enter the number: ");
     int n = input.nextInt();
-    int result = fibonacci(n);
-    System.out.println("Fibonacci number at position " + n + " is: " + result);
+    for(int i=0; i<=n; i++)
+
+      {
+        System.out.println(fibonacci(i) + " ");
+      }
+    
     input.close();
   }
 }
