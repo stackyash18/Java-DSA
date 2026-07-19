@@ -7,8 +7,6 @@ public class GuessingGame {
 
     int randomNum = (int)(Math.random()*50)+1;
 
-    System.out.print(randomNum);
-
     while (true) {
       System.out.print("Guess the number between 1 and 50: ");
       int guessNum = input.nextInt();
